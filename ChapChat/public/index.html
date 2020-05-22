@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<!-- Setting the view formatting for mobile devices. Adding reference to the style stylesheet. -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" title="Style" href="style.css" />
+  <link rel="icon" href="images/appicon.png" />
+  <title>ChapChat</title>
+</head>
+
+<!-- All the displayed content on the page. -->
+
+<body>
+  <main class="container">
+    <div class="header">
+      <h1>My ID: <span id="myid"></span></h1>
+      <h2>Connected to: <span id="connectedTo"></span><h2>
+      <button id="signOut">Sign out</button>
+    </div>
+
+    <div class="leftside">
+      <label for="message">Add a contact:</label>
+      <input type="text" id="addContactBox">
+      <button type="button" id="submitAddContact"> Add </button>
+      <ul id="contactsList"></ul>
+    </div>
+
+    <div class="rightside">
+      <ul id="messagesSent"></ul>
+      <div id="messageInput">
+        <input type="text" id="messageBox">
+        <button type="button" id="submitMessage"> Send Message </button>
+      </div>
+    </div>
+  </main>
+
+  <div id="signInBackground">
+    <div id="signInContainer">
+      <p>Sign-in</p>
+      <input placeholder="Email" id="signInID"></input>
+      <button id="signInButton">Sign in</button>
+      <p>Register</p>
+      <input placeholder="Name" id="registerName"></input>
+      <input placeholder="Email" id="registerEmail"></input>
+      <button id="registerButton">Register</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/peerjs@0.3.20/dist/peer.min.js"></script>
+  <script src="scripts/nacl.min.js"></script>
+  <script src="scripts/nacl-util.min.js"></script>
+  <script src="scripts/cryptography.js"></script>
+  <script src="scripts/chat.js"></script>
+</body>
+
+</html>
