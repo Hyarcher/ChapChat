@@ -1,3 +1,4 @@
 # ChapChat
 
-An encrypted messaging web application
+*An encrypted messaging web application*
+
