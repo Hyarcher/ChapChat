@@ -6,4 +6,4 @@ To run this application you will need a command line or terminal application. Al
 
 Once inside the directory the following command should be run;
 
-> npm install
+`npm install`
